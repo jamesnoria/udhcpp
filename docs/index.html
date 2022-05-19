@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Estructura de Datos | James Noria</title>
+    <meta
+      name="Simple notebook for me :lol:"
+      content="Cuaderno del curso Estructura de Datos"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Open+Sans:ital,wght@0,400;0,700;1,600&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"
+      integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="navbar clear nav-top">
+      <div class="row content">
+        <a href="#"><img class="logo" src="./assets/UDH-logo.png" /></a>
+        <a class="right" style="text-decoration: underline" href="#"
+          ><i class="fas fa-book"></i>&nbsp;Cuaderno de Estudio</a
+        >
+        <a class="right" href="mailto:jnoria.dev@gmail.com" target="_blank"
+          ><i class="fas fa-paper-plane"></i>&nbsp; jnoria.dev@gmail.com</a
+        >
+      </div>
+    </div>
+
+    <div class="container clear">
+      <div class="row wrapper">
+        <div class="sidepanel">
+          <a class="title" href="#">Introducción</a>
+
+          <a class="section" href="#">Datos del curso</a>
+          <a class="section" href="#">Sobre este cuaderno</a>
+          <a class="section" href="#technology">Tecnologias</a>
+
+          <div class="divider left"></div>
+
+          <a class="title" href="#gettingstarted">Arreglos</a>
+
+          <a class="section" href="#installingapp">Unidimensionales</a>
+          <a class="section" href="#openingapp">Bidimensionales</a>
+
+          <div class="divider left"></div>
+
+          <a class="title" href="#basicfeatures">Ordenamiento y Busqueda</a>
+
+          <a class="section" href="#basicfeatures">Busqueda Binaria</a>
+          <a class="section" href="#basicfeatures">Busqueda Secuencial</a>
+          <a class="section" href="#feature3">Ordenamiento Burbuja</a>
+          <a class="section" href="#feature3">Ord. de Selección</a>
+          <a class="section" href="#feature3">Ordenamiento QuickSort</a>
+
+          <div class="divider left"></div>
+
+          <a class="title" href="#advanced">Estructura de Datos</a>
+
+          <a class="section" href="#advanced">Ejercicio de entrada</a>
+
+          <div class="space double"></div>
+        </div>
+
+        <div class="right-col">
+          <h1>Introducción</h1>
+
+          <p>
+            El siguiente cuaderno virtual esta destinado a servir como un
+            compendio de los ejercicios vistos en clase, asi como los que fueron
+            encargados como asignación de aprendizaje.
+          </p>
+
+          <h2>Datos del Curso:</h2>
+
+          <p>
+            <b>Estructura de Datos - Ciclo IV</b> <br />
+            Docente: Ethel J. Manzano Lozano <br />
+            Alumno: James Noria Velarde adipiscing elit.
+          </p>
+
+          <h2>Sobre este cuaderno</h2>
+
+          <p id="technology">
+            Las estructuras de datos son un medio para manejar grandes
+            cantidades de datos de manera eficiente para usos tales como grandes
+            bases de datos y servicios de indización de Internet. Por lo
+            general, las estructuras de datos eficientes son clave para diseñar
+            algoritmos eficientes.
+          </p>
+
+          <h2>Tecnologias</h2>
+
+          <p>
+            Esta página web esta construida con Javascript, HTML and CSS.<br />
+            El código mostrado aquí esta alojado en el siguiente repositorio:
+            <a href="https://github.com/jamesnoria/udhcpp">Github Repository</a>
+          </p>
+
+          <p id="gettingstarted">&copy James Noria | 2022</p>
+
+          <div class="divider" style="width: 24%; margin: 30px 0"></div>
+
+          <h1>Arreglos</h1>
+
+          <h2>Unidimensionales</h2>
+
+          <p>
+            Un arreglo se define como una colección finita, homogénea y ordenada
+            de elementos como se ha definido antes pero se caracteriza por ser
+            unidimensional porque tiene una solo dimensión como se muestra a
+            continuación. Un arreglo tiene la característica de que puede
+            almacenar a N elementos del mismo tipo y además permite el acceso a
+            cada uno de estos elementos. Se distinguen dos partes en los
+            arreglos:
+          </p>
+
+          <ul>
+            <li>
+              Los componentes. Hacen referencia a los elementos que componen o
+              forman el arreglo. Es decir, son los valores que se almacenan en
+              cada una de sus casillas.
+            </li>
+            <li>
+              Los índices. Son los que permiten acceder a los componentes del
+              arreglo en forma individual. Es decir, la posición dentro del
+              arreglo
+            </li>
+          </ul>
+          <p style="text-align: center">
+            <img
+              src="./assets/unidimensional.png"
+              alt="arreglo unidimensional"
+            />
+          </p>
+
+          <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fjamesnoria%2Fudhcpp%2Fblob%2Fmain%2FclassExercises%2Fold%2F1.cpp&style=github&showBorder=on&showLineNumbers=on&showCopy=on"></script>
+
+          <h2>Bidimensionales</h2>
+
+          <p>
+            Los arreglos bidimensionales son tablas de valores. Cada elemento de
+            un arreglo bidimensional está simultáneamente en una fila y en una
+            columna. En matemáticas, a los arreglos bidimensionales se les llama
+            matrices, y son muy utilizados en problemas de Ingeniería. En un
+            arreglo bidimensional, cada elemento tiene una posición que se
+            identifica mediante dos índices: el de su fila y el de su columna.
+          </p>
+          <p style="text-align: center">
+            <img
+              src="./assets/bidimensional2.jpg"
+              alt="arreglo bidimensional"
+            />
+          </p>
+
+          <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fjamesnoria%2Fudhcpp%2Fblob%2Fmain%2FclassExercises%2Fold%2F2.cpp&style=github&showBorder=on&showLineNumbers=on&showCopy=on"></script>
+
+          <div class="divider" style="width: 24%; margin: 30px 0"></div>
+
+          <h1>Ordenamiento y busqueda</h1>
+
+          <h2 id="basicfeatures">Busqueda Binaria</h2>
+
+          <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fjamesnoria%2Fudhcpp%2Fblob%2Fmain%2FsideLearning%2Fsearch%2Fbinaria.cpp&style=github&showBorder=on&showLineNumbers=on&showCopy=on"></script>
+
+          <h2>Busqueda Secuencial</h2>
+
+          <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fjamesnoria%2Fudhcpp%2Fblob%2Fmain%2FsideLearning%2Fsearch%2Fsecuencial.cpp&style=github&showBorder=on&showLineNumbers=on&showCopy=on"></script>
+
+          <h2 id="feature4">Ordenamiento Burbuja</h2>
+
+          <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fjamesnoria%2Fudhcpp%2Fblob%2Fmain%2FsideLearning%2Fsort%2Fburbuja.cpp&style=github&showBorder=on&showLineNumbers=on&showCopy=on"></script>
+
+          <h2 id="feature5">Ordenamiento de Seleccion</h2>
+
+          <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fjamesnoria%2Fudhcpp%2Fblob%2Fmain%2FsideLearning%2Fsort%2Fseleccion.cpp&style=github&showBorder=on&showLineNumbers=on&showCopy=on"></script>
+
+          <h2>Ordenamiento QuickSort</h2>
+
+          <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fjamesnoria%2Fudhcpp%2Fblob%2Fmain%2FsideLearning%2Fsort%2FquickSort.cpp&style=github&showBorder=on&showLineNumbers=on&showCopy=on"></script>
+
+          <div class="divider" style="width: 24%; margin: 30px 0"></div>
+
+          <h1 id="advanced">Estructuras de Datos</h1>
+
+          <h2>Ejercicio de entrada</h2>
+
+          <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fjamesnoria%2Fudhcpp%2Fblob%2Fmain%2FclassExercises%2F12-05%2Festructura.cpp&style=github&showBorder=on&showLineNumbers=on&showCopy=on"></script>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
