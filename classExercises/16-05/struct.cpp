@@ -28,7 +28,7 @@ int main(int argc, char **argv)
         cout << "* 1) Ingreso de datos                 *\n";
         cout << "* 2) Mostrar Lista                    *\n";
         cout << "* 3) Busqueda por DNI                 *\n";
-        cout << "* 4) Buscar perros menores de 3 anios *\n";
+        cout << "* 4) Buscar perros menores de 3 anios *\n";z
         cout << "* 5) Ordenar por Ap_nom del dueño    *\n";
         cout << "*\n ...ELIJA UNA OPCION....: ";
         cin >> op;
